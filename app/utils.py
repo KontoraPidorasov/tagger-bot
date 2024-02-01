@@ -36,7 +36,7 @@ class WdTaggerSDK:
             self.base_url += "/"
         url = self.base_url
         if not self.base_url.endswith("upload/"):
-            url = f"{self.base_url}/upload/"
+            url = f"{self.base_url}upload/"
         data = {
             "token": token,
             "file": file,

@@ -54,7 +54,6 @@ class BotRunner(object):
             file_data = raw_file_data
         result = await pipeline_tag(trace_id="test", content=file_data)
         content = [
-            formatting.mbold(f"🥽 AnimeScore: {result.anime_score}"),
             formatting.mcode(result.anime_tags)
         ]
         with Image.open(BytesIO(raw_file_data)) as img:

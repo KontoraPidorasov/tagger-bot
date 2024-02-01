@@ -108,22 +108,6 @@ files = [
 ]
 
 [[package]]
-name = "anime-identify"
-version = "0.1.0"
-requires_python = ">=3.8"
-summary = "Identify whether an image is an anime image"
-dependencies = [
-    "numpy>=1.24.4",
-    "onnxruntime>=1.16.3",
-    "opencv-python>=4.8.1.78",
-    "robust-downloader>=0.0.2",
-]
-files = [
-    {file = "anime_identify-0.1.0-py3-none-any.whl", hash = "sha256:07d8a91611b3a0f630a4d8550c4552d780bc07d31772a21ecb0bfc13d0327e18"},
-    {file = "anime_identify-0.1.0.tar.gz", hash = "sha256:f13ce24746121af747aa91c172f89540011ee355917f98807431f308723bfe93"},
-]
-
-[[package]]
 name = "annotated-types"
 version = "0.6.0"
 requires_python = ">=3.8"

@@ -12,7 +12,7 @@ load_dotenv()
 logger.remove()
 # 添加标准输出
 print("从配置文件中读取到的DEBUG为", settings.app.debug)
-handler_id = logger.add(sys.stderr, level="INFO" if not settings.app.debug else "DEBUG")
+handler_id = logger.add(sys.stderr, level="DEBUG")
 # 添加文件写出
 logger.add(
     sink="run.log",
