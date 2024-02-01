@@ -30,21 +30,16 @@ class WdTaggerSDK:
         self.base_url = base_url
 
     async def upload(
-        self, file, token, general_threshold=0.35, character_threshold=0.85
+        self, file, format="json", character_threshold=0.85
     ):
-        if not self.base_url.endswith("/"):
-            self.base_url += "/"
-        url = self.base_url
-        if not self.base_url.endswith("upload/"):
-            url = f"{self.base_url}upload/"
+        url = f"{self.base_url}evaluate"
         data = {
-            "token": token,
+            "format": format,
             "file": file,
-            "general_threshold": str(general_threshold),
-            "character_threshold": str(character_threshold),
         }
         # print(data)
         async with aiohttp.ClientSession() as session:
             async with session.post(url, data=data) as response:
+                print(await response.json())
                 # response.raise_for_status()
                 return await response.json()

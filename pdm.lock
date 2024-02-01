@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform"]
 lock_version = "4.4.1"
-content_hash = "sha256:887035cf25f24b0bbfa14c711957485649c8b189b7b2604b55e42236285c340a"
+content_hash = "sha256:2bf1d50675b160958e9f29629d4a26ada85ca0178c85db9f05eb11a5d4fc14ec"
 
 [[package]]
 name = "aiofiles"
@@ -350,19 +350,6 @@ dependencies = [
 files = [
     {file = "coloredlogs-15.0.1-py2.py3-none-any.whl", hash = "sha256:612ee75c546f53e92e70049c9dbfcc18c935a2b9a53b66085ce9ef6a6e5c0934"},
     {file = "coloredlogs-15.0.1.tar.gz", hash = "sha256:7c991aa71a4577af2f82600d8f8f3a89f936baeaf9b50a9c197da014e5bf16b0"},
-]
-
-[[package]]
-name = "colorlog"
-version = "6.8.2"
-requires_python = ">=3.6"
-summary = "Add colours to the output of Python's logging module."
-dependencies = [
-    "colorama; sys_platform == \"win32\"",
-]
-files = [
-    {file = "colorlog-6.8.2-py3-none-any.whl", hash = "sha256:4dcbb62368e2800cb3c5abd348da7e53f6c362dda502ec27c560b2e58a66bd33"},
-    {file = "colorlog-6.8.2.tar.gz", hash = "sha256:3e3e079a41feb5a1b64f978b5ea4f46040a94f11f0e8bbb8261e3dbbeca64d44"},
 ]
 
 [[package]]
@@ -905,7 +892,7 @@ summary = "ONNX Runtime is a runtime accelerator for Machine Learning models"
 dependencies = [
     "coloredlogs",
     "flatbuffers",
-    "numpy>=1.21.6",
+    "numpy>=1.24.2",
     "packaging",
     "protobuf",
     "sympy",
@@ -1359,20 +1346,6 @@ files = [
 ]
 
 [[package]]
-name = "robust-downloader"
-version = "0.0.2"
-summary = "A Simple Robust Downloader written in Python"
-dependencies = [
-    "colorlog",
-    "requests",
-    "tqdm",
-]
-files = [
-    {file = "robust-downloader-0.0.2.tar.gz", hash = "sha256:08c938b96e317abe6b037e34230a91bda9b5d613f009bca4a47664997c61de90"},
-    {file = "robust_downloader-0.0.2-py3-none-any.whl", hash = "sha256:8fe08bfb64d714fd1a048a7df6eb7b413eb4e624309a49db2c16fbb80a62869d"},
-]
-
-[[package]]
 name = "safer"
 version = "4.12.3"
 requires_python = ">=3.8"
@@ -1511,19 +1484,6 @@ dependencies = [
 files = [
     {file = "tifffile-2023.12.9-py3-none-any.whl", hash = "sha256:9b066e4b1a900891ea42ffd33dab8ba34c537935618b9893ddef42d7d422692f"},
     {file = "tifffile-2023.12.9.tar.gz", hash = "sha256:9dd1da91180a6453018a241ff219e1905f169384355cd89c9ef4034c1b46cdb8"},
-]
-
-[[package]]
-name = "tqdm"
-version = "4.66.1"
-requires_python = ">=3.7"
-summary = "Fast, Extensible Progress Meter"
-dependencies = [
-    "colorama; platform_system == \"Windows\"",
-]
-files = [
-    {file = "tqdm-4.66.1-py3-none-any.whl", hash = "sha256:d302b3c5b53d47bce91fea46679d9c3c6508cf6332229aa1e7d8653723793386"},
-    {file = "tqdm-4.66.1.tar.gz", hash = "sha256:d88e651f9db8d8551a62556d3cff9e3034274ca5d66e93197cf2490e2dcb69c7"},
 ]
 
 [[package]]

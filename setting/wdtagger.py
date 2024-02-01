@@ -16,7 +16,7 @@ class WdTagger(BaseSettings):
     代理设置
     """
 
-    wd_api_endpoint: str = "http://127.0.0.1:5010/upload"
+    wd_api_endpoint: str = "http://autotagger.aibooru.online/"
     model_config = SettingsConfigDict(
         env_file=".env", env_file_encoding="utf-8", extra="ignore"
     )
